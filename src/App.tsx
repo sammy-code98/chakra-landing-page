@@ -16,7 +16,6 @@ function App() {
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl">
         <Nav ref={btnRef} onOpen={onOpen} />
-
         <DrawerComponent isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
         <HeroComponent />
     </Box>
