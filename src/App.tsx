@@ -5,7 +5,7 @@ import {
   theme,
   useDisclosure
 } from "@chakra-ui/react"
-import { Nav, DrawerComponent } from "./components"
+import { Nav, DrawerComponent, HeroComponent } from "./components"
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         <Nav ref={btnRef} onOpen={onOpen} />
 
         <DrawerComponent isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
+        <HeroComponent />
     </Box>
   </ChakraProvider>
 )
