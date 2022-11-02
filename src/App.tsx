@@ -1,20 +1,26 @@
-import * as React from "react"
+import React, { useRef } from "react"
 import {
   ChakraProvider,
   Box,
-  Grid,
   theme,
+  useDisclosure
 } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Nav } from "./components"
+import { Nav, DrawerComponent } from "./components"
 
-export const App = () => (
+
+function App() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = useRef()
+
+  return (
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl">
-      {/* <Grid minH="100vh" p={3}> */}
-      {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
-      <Nav />
-      {/* </Grid> */}
+        <Nav ref={btnRef} onOpen={onOpen} />
+
+        <DrawerComponent isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
     </Box>
   </ChakraProvider>
 )
+}
+
+export default App
