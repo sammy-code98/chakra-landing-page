@@ -32,7 +32,7 @@ export default function Nav({ onOpen, ref }: { onOpen: any, ref: any }) {
             h='10vh'
             alignItems='center'
             py='6'
-            px='24'
+            px={{ base: '6', md: '24' }}
             position='sticky'
             top='0'
             zIndex='sticky'

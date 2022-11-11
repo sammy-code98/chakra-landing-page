@@ -2,5 +2,12 @@ import Nav from "./Nav";
 import DrawerComponent from "./DrawerComponent";
 import HeroComponent from "./HeroComponent";
 import AboutComponent from "./AboutComponent";
+import ServiceComponent from "./ServiceComponent";
 
-export { Nav, DrawerComponent, HeroComponent, AboutComponent };
+export {
+  Nav,
+  DrawerComponent,
+  HeroComponent,
+  AboutComponent,
+  ServiceComponent,
+};

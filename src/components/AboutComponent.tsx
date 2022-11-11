@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Spacer, Text, useMediaQuery, Icon, Heading } from "@chakra-ui/react"
+import { Flex, Text, useMediaQuery, Icon, Heading } from "@chakra-ui/react"
 import { FaTools, FaHandshake, FaStar } from 'react-icons/fa';
 
 
