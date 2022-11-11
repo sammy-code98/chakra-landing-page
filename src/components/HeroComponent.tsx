@@ -8,7 +8,7 @@ export default function HeroComponent() {
         <Flex
             alignItems='center'
             w='full'
-            px={isMobileScreen ? '16' : '6'}
+            px={isMobileScreen ? '24' : '6'}
             py='16'
             minHeight='90vh'
             justifyContent='space-between'
@@ -43,6 +43,7 @@ export default function HeroComponent() {
                     mb={isMobileScreen ? '0' : '10'}
                     size={isMobileScreen ? 'lg' : 'md'}
                 >Get Started</Button>
+
             </Box>
             <Spacer />
 

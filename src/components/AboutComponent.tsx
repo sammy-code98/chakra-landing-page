@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Spacer, Text, useMediaQuery, Icon, Heading } from "@chakra-ui/react"
+import { Flex, Text, useMediaQuery, Icon, Heading } from "@chakra-ui/react"
 import { FaTools, FaHandshake, FaStar } from 'react-icons/fa';
 
 
@@ -16,7 +16,7 @@ export default function AboutComponent() {
                 justifyContent='space-between'
                 w='full'
                 py='12'
-                px={isMobileScreen ? '16' : '6'}
+                px={isMobileScreen ? '24' : '6'}
                 flexWrap='wrap'
                 flexDirection={isMobileScreen ? 'row' : 'column'}
             >
