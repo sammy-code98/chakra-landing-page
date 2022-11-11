@@ -43,6 +43,7 @@ export default function HeroComponent() {
                     mb={isMobileScreen ? '0' : '10'}
                     size={isMobileScreen ? 'lg' : 'md'}
                 >Get Started</Button>
+
             </Box>
             <Spacer />
 
