@@ -5,7 +5,7 @@ import {
   theme,
   useDisclosure
 } from "@chakra-ui/react"
-import { Nav, DrawerComponent, HeroComponent, AboutComponent, ServiceComponent } from "./components"
+import { Nav, DrawerComponent, HeroComponent, AboutComponent, ServiceComponent, FooterComponent } from "./components"
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <HeroComponent />
         <AboutComponent />
         <ServiceComponent />
+        <FooterComponent />
     </Box>
   </ChakraProvider>
 )
