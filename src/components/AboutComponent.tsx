@@ -16,7 +16,7 @@ export default function AboutComponent() {
                 justifyContent='space-between'
                 w='full'
                 py='12'
-                px={isMobileScreen ? '16' : '6'}
+                px={isMobileScreen ? '24' : '6'}
                 flexWrap='wrap'
                 flexDirection={isMobileScreen ? 'row' : 'column'}
             >

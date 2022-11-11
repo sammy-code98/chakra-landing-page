@@ -31,7 +31,8 @@ export default function Nav({ onOpen, ref }: { onOpen: any, ref: any }) {
         <Flex
             h='10vh'
             alignItems='center'
-            p='6'
+            py='6'
+            px='24'
             position='sticky'
             top='0'
             zIndex='sticky'
