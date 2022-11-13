@@ -45,7 +45,16 @@ export default function Nav({ onOpen, ref }: { onOpen: any, ref: any }) {
             <Spacer />
 
             <Flex alignItems='center'>
-                <IconButton mr='10' w={6} h={6} p={5} onClick={toggleColorMode} aria-label={'toggle button'}>
+                <IconButton
+                    mr='10'
+                    w={6} h={6} p={5}
+                    onClick={toggleColorMode}
+                    variant='ghost'
+                    _hover={{
+                        bg: 'none'
+
+                    }}
+                    aria-label={'toggle button'}>
                     {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                 </IconButton>
 
@@ -54,7 +63,14 @@ export default function Nav({ onOpen, ref }: { onOpen: any, ref: any }) {
                         <>
                             <Text fontSize='md' mr='10'>About</Text>
                             <Text fontSize='md' mr='10'>More Apps</Text>
-                            <Button>Sign Up </Button>
+                            <Button
+                                px='2rem'
+                                py='1.5rem'
+                                colorScheme='blue'
+                                variant='solid'
+                                mb={isMobileScreen ? '0' : '10'}
+                                fontWeight='bold'
+                                size={isMobileScreen ? 'md' : 'sm'}>Sign Up </Button>
                         </>
                     ) : (
                         <IconButton
